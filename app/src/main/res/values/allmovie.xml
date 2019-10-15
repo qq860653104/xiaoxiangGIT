@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="movie_name">
+
+        <item>动作片啊啊</item>
+        <item>喜剧片</item>
+        <item>爱情片</item>
+        <item>科幻片</item>
+        <item>恐怖片</item>
+        <item>剧情片</item>
+        <item>战争片</item>
+        <item>警匪片</item>
+        <item>悬疑片</item>
+        <item>欧美剧</item>
+        <item>国产剧</item>
+        <item>港台剧</item>
+        <item>日韩剧</item>
+        <item>动漫</item>
+        <item>综艺</item>
+        <!--<item>动作片</item>-->
+        <item>专题</item>
+        <item>合集</item>
+    </string-array>
+
+
+    <string-array name="movie_id">
+
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>17</item>
+        <item>15</item>
+        <item>16</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>3</item>
+        <item>4</item>
+        <!--<item>5</item>-->
+        <item>40</item>
+        <item>41</item>
+    </string-array>
+
+</resources>

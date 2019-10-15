@@ -1,0 +1,1 @@
+include ':app', ':androidtvwidget', ':myapplication', ':vitamio', ':luncher', ':TestDownLoadImg', ':playerview', ':jcvideoplayer-lib', ':library', ':xiaoxiangMain', ':xiangxianglib'

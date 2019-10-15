@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 这里只是测试的demo -->
+<com.open.androidtvwidget.leanback.widget.OpenCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_280"
+    android:layout_height="@dimen/h_450"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:layout_marginTop="10dp"
+    android:layout_margin="15dp">
+
+    <!--父控件必须设置背景 才可以有 z效果！！！-->
+
+            <com.open.androidtvwidget.leanback.widget.OpenCardView
+                android:id="@+id/img_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <ImageView
+                    android:id="@+id/my_img"
+                    android:layout_width="@dimen/w_280"
+                    android:layout_height="@dimen/h_450"
+                    android:layout_gravity="top"
+                    android:scaleType="fitXY"
+                   />
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="252px"-->
+                    <!--android:id="@+id/delete_img"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:src="@drawable/delete_sc"-->
+                    <!--android:layout_height="357px" />-->
+
+            </com.open.androidtvwidget.leanback.widget.OpenCardView>
+
+            <!--<ImageView-->
+                <!--android:layout_width="252px"-->
+                <!--android:id="@+id/delete_img"-->
+                <!--android:visibility="invisible"-->
+                <!--android:src="@drawable/delete_sc"-->
+                <!--android:layout_height="357px" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/delete_img"
+                android:visibility="gone"
+                android:background="#70000000"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_54"
+                android:text="删除"
+                android:src="@drawable/delete_sc"
+                android:layout_height="match_parent" />
+
+
+
+
+            <!--<CornerVewrVew-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="left"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--cv:cv_background_color="#5EB335"-->
+            <!--cv:cv_fill_triangle="true"-->
+            <!--cv:cv_gravity="TOP_LEFT"-->
+            <!--cv:cv_text="VIP"-->
+            <!--cv:cv_text_size="15sp" />-->
+
+
+
+
+            <TextView
+                android:layout_width="50px"
+                android:background="@drawable/zhibo_logo"
+                android:id="@+id/pingfen"
+                android:visibility="invisible"
+                android:layout_marginLeft="10px"
+                android:layout_gravity="top|left"
+                android:layout_height="50px" />
+
+            <com.chunleikeji.view.MoreTextView
+                android:id="@+id/moretext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_40"
+                android:layout_gravity="bottom"
+                android:background="#90000000"
+                android:ellipsize="marquee"
+                android:gravity="bottom|center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_30"
+                />
+
+
+
+
+
+
+
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

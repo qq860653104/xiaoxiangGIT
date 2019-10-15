@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quanbu_bg"
+    tools:context=".CacheActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_600"
+            android:layout_marginTop="@dimen/h_100"
+            android:paddingLeft="@dimen/w_70"
+            android:paddingRight="@dimen/w_70"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_100"
+            android:layout_marginTop="@dimen/h_100"
+            android:text="删除少量视频：清除缓存总量的百分之二十五"
+            android:textColor="#a3a3a3"
+            android:textSize="@dimen/h_33" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_100"
+            android:layout_marginTop="@dimen/h_30"
+            android:text="删除全部视频：清除所有缓存"
+            android:textColor="#a3a3a3"
+            android:textSize="@dimen/h_33" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_100"
+            android:layout_marginTop="@dimen/h_30"
+            android:text="删除图片：清除所有图片缓存"
+            android:textColor="#a3a3a3"
+            android:textSize="@dimen/h_33" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/h_100"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/but"
+                android:layout_width="@dimen/w_300"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@+id/but"
+                android:nextFocusRight="@+id/butOk"
+                android:nextFocusUp="@+id/but"
+                android:nextFocusDown="@+id/but"
+                android:text="删除少量视频缓存"
+                android:textColor="#eeeeee" />
+
+            <Button
+                android:id="@+id/butOk"
+                android:layout_width="@dimen/w_300"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_50"
+                android:background="@drawable/button_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusUp="@+id/butOk"
+                android:nextFocusDown="@+id/butOk"
+                android:text="删除全部视频缓存"
+                android:textColor="#eeeeee" />
+
+            <Button
+                android:id="@+id/imgEliminate"
+                android:layout_width="@dimen/w_300"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/w_50"
+                android:background="@drawable/button_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusUp="@+id/imgEliminate"
+                android:nextFocusDown="@+id/imgEliminate"
+                android:text="删除图片缓存"
+                android:textColor="#eeeeee" />
+
+            <Button
+                android:id="@+id/quitUser"
+                android:layout_width="@dimen/w_300"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/w_50"
+                android:background="@drawable/button_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusUp="@+id/quitUser"
+                android:nextFocusRight="@+id/quitUser"
+                android:nextFocusDown="@+id/quitUser"
+                android:text="退出登录"
+                android:textColor="#eeeeee" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/live_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

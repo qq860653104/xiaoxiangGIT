@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/w_50"
+    android:paddingRight="@dimen/w_50"
+    android:paddingTop="@dimen/h_100"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/h_39"
+        android:textColor="@color/defult_text"
+        android:layout_marginTop="@dimen/h_105"
+        android:layout_marginBottom="@dimen/h_55"
+        android:text="热点搜索"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <!--<com.open.androidtvwidget.view.GridViewTV-->
+        <!--android:id="@+id/search_right_grid"-->
+        <!--android:layout_width="@dimen/search_right_grid_width"-->
+        <!--android:horizontalSpacing="@dimen/search_right_grid_h_spacing"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:clipChildren="false"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:numColumns="4"-->
+        <!--android:scrollbars="none"-->
+        <!--android:verticalSpacing="@dimen/search_right_grid_v_spacing" />-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/search_right_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:nextFocusUp="@+id/search_right_grid"
+            android:descendantFocusability="blocksDescendants"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/w_35"
+            android:paddingBottom="@dimen/h_60"
+            android:paddingRight="@dimen/w_35"
+            android:scrollbars="none"
+            />
+    </FrameLayout>
+
+    <!--<com.open.androidtvwidget.leanback.recycle.RecyclerViewTV-->
+        <!--android:id="@+id/search_right_grid"-->
+        <!--android:layout_width="@dimen/search_right_grid_width"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:clipChildren="false"-->
+        <!--android:focusable="false"-->
+        <!--android:paddingLeft="@dimen/w_68"-->
+        <!--/>-->
+</LinearLayout>

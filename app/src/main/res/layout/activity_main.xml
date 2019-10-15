@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customAttr="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <com.chunleikeji.view.HomeForceFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/w_50"
+        android:paddingRight="@dimen/w_50">
+
+        <com.chunleikeji.view.SmoothHorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/w_150"
+            android:layout_marginBottom="@dimen/w_180">
+
+            <com.chunleikeji.view.DrawingOrderRelativeLayout
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:focusable="false"
+                android:gravity="center"
+                >
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view10"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_alignBaseline="@+id/view"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:tag="top"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="诗词"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="健康直通车"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view11"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_below="@+id/view10"
+                    android:layout_alignLeft="@+id/view10"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:nextFocusLeft="@+id/view11"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:tag="top"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="儿歌"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="每天五分钟"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+
+
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view"
+                    android:layout_width="@dimen/w_357"
+                    android:layout_height="@dimen/h_672"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/view11"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:nextFocusUp="@+id/view"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:tag="top"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="名医堂"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view4"
+                    android:layout_width="@dimen/w_672"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_alignTop="@+id/view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:nextFocusUp="@+id/view4"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="执壶小剧场"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view2"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_below="@+id/view4"
+                    android:layout_alignBaseline="@+id/view"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toEndOf="@+id/view3"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="文娱经典"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view3"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_below="@+id/view4"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="多彩生活"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view5"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_alignBaseline="@+id/view"
+                    android:layout_alignTop="@+id/view"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/view4"
+                    android:layout_toRightOf="@+id/view4"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:nextFocusUp="@+id/view5"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/border_down_shape"
+                        android:gravity="center|left"
+                        android:padding="15px"
+                        android:text="养老资讯"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:visibility="gone" />
+
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <com.chunleikeji.view.MetroItemFrameLayout
+                    android:id="@+id/view6"
+                    android:layout_width="@dimen/w_325"
+                    android:layout_height="@dimen/h_325"
+                    android:layout_below="@+id/view5"
+                    android:layout_alignLeft="@+id/view5"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/view5"
+                    android:background="@drawable/border_shape"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    app:radius="4dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/border_shape" />
+
+                    <!--<CornerVewrVew&ndash;&gt;-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--cv:cv_background_color="#5EB335"-->
+                    <!--cv:cv_fill_triangle="true"-->
+                    <!--cv:cv_gravity="TOP_LEFT"-->
+                    <!--cv:cv_text="VIP"-->
+                    <!--cv:cv_text_size="15sp" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="42px"
+                        android:layout_gravity="bottom"
+                        android:background="#90000000"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:text="收藏夹"
+                        android:textColor="@color/white"
+                        android:textSize="20px" />
+
+                </com.chunleikeji.view.MetroItemFrameLayout>
+
+                <!--<MetroItemFrameLayoutyout&ndash;&gt;-->
+                <!--android:id="@+id/view12"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignBaseline="@+id/view"-->
+                <!--android:layout_alignTop="@+id/view"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_toEndOf="@+id/view5"-->
+                <!--android:layout_toRightOf="@+id/view5"-->
+                <!--android:background="@drawable/border_shape"-->
+                <!--android:focusable="false"-->
+                <!--app:radius="4dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="left|center_vertical"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/ic_post_7" />-->
+
+                <!--&lt;!&ndash;<CornerVewrVew&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="left"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingRight="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;cv:cv_background_color="#5EB335"&ndash;&gt;-->
+                <!--&lt;!&ndash;cv:cv_fill_triangle="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;cv:cv_gravity="TOP_LEFT"&ndash;&gt;-->
+                <!--&lt;!&ndash;cv:cv_text="VIP"&ndash;&gt;-->
+                <!--&lt;!&ndash;cv:cv_text_size="15sp" />&ndash;&gt;-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@drawable/border_down_shape"-->
+                <!--android:gravity="center|left"-->
+                <!--android:padding="15px"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18dp" />-->
+
+                <!--<!MetroItemFrameLayoutyout>&ndash;&gt;-->
+
+                <!--<MetroItemFrameLayoutyout&ndash;&gt;-->
+                <!--android:id="@+id/view13"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignBottom="@+id/view"-->
+                <!--android:layout_alignLeft="@+id/view12"-->
+                <!--android:layout_below="@+id/view12"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_toEndOf="@+id/view12"-->
+                <!--android:background="@drawable/border_shape"-->
+                <!--android:focusable="false"-->
+                <!--app:radius="4dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="left|center_vertical"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/ic_post_8" />-->
+
+                <!--<CalendarView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--cv:cv_background_color="#5EB335"-->
+                <!--cv:cv_fill_triangle="true"-->
+                <!--cv:cv_gravity="TOP_LEFT"-->
+                <!--cv:cv_text="VIP"-->
+                <!--cv:cv_text_size="15sp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@drawable/border_down_shape"-->
+                <!--android:gravity="center|left"-->
+                <!--android:padding="15px"-->
+                <!--android:text="权利的游戏第六季..."-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18dp" />-->
+
+                <!--<!MetroItemFrameLayoutyout>&ndash;&gt;-->
+
+                <!--<MetroItemFrameLayoutyout&ndash;&gt;-->
+                <!--android:id="@+id/view7"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignBaseline="@+id/view"-->
+                <!--android:layout_alignTop="@+id/view"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_toEndOf="@+id/view12"-->
+                <!--android:layout_toRightOf="@+id/view12"-->
+                <!--android:background="@drawable/border_shape"-->
+                <!--android:focusable="false"-->
+                <!--app:radius="4dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="left|center_vertical"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/ic_document" />-->
+
+                <!--<!MetroItemFrameLayoutyout>&ndash;&gt;-->
+
+                <!--<MetroItemFrameLayoutyout&ndash;&gt;-->
+                <!--android:id="@+id/view8"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:layout_alignBottom="@+id/view"-->
+                <!--android:layout_alignLeft="@+id/view7"-->
+                <!--android:layout_below="@+id/view7"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_toEndOf="@+id/view7"-->
+                <!--android:background="@drawable/border_shape"-->
+                <!--android:focusable="false"-->
+                <!--app:radius="4dp">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="left|center_vertical"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/ic_variety" />-->
+
+                <!--<!MetroItemFrameLayoutyout>&ndash;&gt;-->
+
+            </com.chunleikeji.view.DrawingOrderRelativeLayout>
+
+
+        </com.chunleikeji.view.SmoothHorizontalScrollView>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="" />-->
+        <!--</LinearLayout>-->
+
+
+
+    </com.chunleikeji.view.HomeForceFrameLayout>
+
+
+    <TextView
+        android:id="@+id/date_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/w_90"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h_43"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="Copyright © 2017 秦皇岛易云互动网络科技有限公司. All rights reserved"/>-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/h_92"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:layout_marginLeft="@dimen/w_10"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="搜索"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52" />
+        <TextView
+            android:id="@+id/lishi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="历史"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52"/>
+        <TextView
+            android:id="@+id/shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="收藏"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52" />
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:id="@+id/ls"-->
+        <!--android:onClick="onClick"-->
+
+        <!--android:focusable="true"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="乐视" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/shezhi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="60dp"-->
+            <!--android:focusable="true"-->
+            <!--android:text="设置"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/h_52" />-->
+        <TextView
+            android:id="@+id/vip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:visibility="gone"
+            android:focusable="true"
+            android:text="会员中心"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52" />
+
+        <TextView
+            android:id="@+id/guanyu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:focusable="true"
+            android:text="关于我们"
+            android:visibility="gone"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52" />
+        <TextView
+            android:id="@+id/eliminate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_10"
+            android:layout_marginRight="@dimen/w_45"
+            android:focusable="true"
+            android:text="清除缓存"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/h_52" />
+
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/viptag"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="top|right"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="2018年7月2日18:39"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="20dp" />-->
+
+
+    <!--<TextClock-->
+    <!--android:id="@+id/textClock"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="right|top"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:layout_marginTop="@dimen/h_50"
+        android:layout_marginLeft="@dimen/w_150"
+        android:layout_marginRight="@dimen/w_150"
+        android:layout_height="wrap_content">
+
+
+
+        <com.chunleikeji.view.MarqueeText
+            android:layout_width="match_parent"
+            android:id="@+id/tongzhi"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/h_32"
+            android:text="" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="85px"
+        android:layout_marginLeft="@dimen/w_20"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/h_92"
+        android:gravity="right|center"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/timeyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/w_20"
+            android:text="2018-3-1"
+            android:textColor="#ffffff"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/timedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/w_20"
+            android:text="18:00"
+            android:textColor="#ffffff"
+            android:textSize="30px" />
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:background="@drawable/bg1"
+        android:id="@+id/live_progress"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏 -->
+    <dimen name="tab_highlight_height">58dp</dimen>
+    <dimen name="tab_recommend_margin_left">60dp</dimen>
+    <dimen name="nav_tab_text_size">@dimen/text_size_50</dimen>
+    <dimen name="text_size_50">20dp</dimen>
+    <dimen name="tab_left_offset">50dp</dimen>
+    <dimen name="nav_bar_margin_top">13dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <integer name="default_blur_radius">15</integer>
+    <integer name="default_downsample_factor">8</integer>
+    <color name="default_overlay_color">#AAFFFFFF</color>
+    <!-- 滚动窗口 -->
+    <dimen name="fading_edge">80dp</dimen>
+    <dimen name="search_key_margin_top">224px</dimen>
+    <dimen name="search_key_margin_left">70px</dimen>
+    <dimen name="search_key_space">10px</dimen>
+    <dimen name="search_key_width_kg">190px</dimen>
+    <dimen name="search_key_width_and_hight">86px</dimen>
+    <dimen name="search_key_size">25px</dimen>
+    <dimen name="search_text_size">30px</dimen>
+    <dimen name="search_key_grid_width_and_hight">590px</dimen>
+    <dimen name="search_key_margin_bottom">164px</dimen>
+    <dimen name="search_left_widget_width">660px</dimen>
+    <dimen name="search_right_grid_width">1126px</dimen>
+    <dimen name="search_right_grid_h_spacing">64px</dimen>
+    <dimen name="search_right_grid_v_spacing">72px</dimen>
+    <dimen name="search_right_text_margintop">105px</dimen>
+    <dimen name="search_right_text_marginbottom">55px</dimen>
+    <dimen name="search_right_text_size">39px</dimen>
+    <dimen name="search_right_paddingleft">72px</dimen>
+    <dimen name="search_right_width">1260px</dimen>
+    <dimen name="search_right_movie_card_width">223px</dimen>
+    <dimen name="search_right_movie_card_height">377px</dimen>
+    <dimen name="search_right_movie_card_img_height">328px</dimen>
+    <dimen name="search_right_movie_card_text_size">32px</dimen>
+    <dimen name="search_text_margin_top">111px</dimen>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="movie_all_left_view">#ffffff</color>
+    <color name="movie_all_left_search">#ffffff</color>
+    <color name="movie_all_right_zt_item">#ffffff</color>
+    <color name="movie_all_left_select_item">#ffffff</color>
+    <color name="zhuan_ti_text">#897871</color>
+    <color name="defult_text">#ffffff</color>
+    <color name="select_text">#535353</color>
+
+    <color name="select_bg">#001693</color>
+
+    <color name="detail_item">#bebebe</color>
+
+    <color name="background_gradient_start">#FFFFFF</color>
+    <color name="background_gradient_end">#8fDDDDDD</color>
+    <color name="fastlane_background">#06838f</color>
+    <color name="fastlane_teal_background">#00796B</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="search_color">#FFEB3B</color>
+    <color name="search_bright_color">#FFEB3B</color>
+    <color name="search_icon_color">#222222</color>
+    <color name="accent">#80D3FB</color>
+    <color name="settings_background">#00695C</color>
+
+    <color name="default_background">#3d3d3d</color>
+
+    <color name="default_card_background_color">#263238</color>
+    <color name="default_card_footer_background_color">#37474F</color>
+    <color name="selected_card_footer_background_color">#F0F</color>
+
+    <color name="lb_default_brand_color">#FF455A64</color>
+    <color name="card_primary_text">#EEEEEE</color>
+    <color name="card_secondary_text">#99EEEEEE</color>
+
+    <color name="loading_error_card_background">#86c739</color>
+
+    <color name="card_examples_background">#222222</color>
+
+    <color name="detail_view_actionbar_background">#04549D</color>
+    <color name="detail_view_background">#0374BF</color>
+    <color name="detail_view_related_background">#022A4E</color>
+    <color name="song_row_favorite_color">#FF6E40</color>
+
+    <color name="app_guidedstep_actions_background">#C03800</color>
+    <color name="app_guidedstep_subactions_background">#732200</color>
+    <color name="app_guidedstep_dialog_actions_background">#263238</color>
+    <color name="settings_card_background">#0277BD</color>
+    <color name="settings_card_background_focussed">#01579B</color>
+
+    <color name="player_progress_color">#feab91</color>
+    <color name="player_background_color">#db2a0f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="greenyellow">#ADFF2F</color><!--黄绿色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="transparent">#00000000</color><!--透明色 -->
+
+    <color name="gray">#FF5E5F60</color>
+    <color name="orange">#FFFC6316</color>
+    <color name="bottle_green">#FF167E34</color>
+    <color name="dark_blue">#eeeeee</color>
+</resources>

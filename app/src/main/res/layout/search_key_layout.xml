@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/w_660"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/w_70"
+    android:layout_marginBottom="@dimen/h_154"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/h_111"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.chunleikeji.view.SearchEditTv
+            android:layout_width="@dimen/w_590"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:id="@+id/search_edit_tv"
+            android:hint="支持中文全拼.英文名搜索。"
+            android:textSize="@dimen/h_30" />
+
+        <TextView
+            android:layout_width="@dimen/w_590"
+            android:layout_height="@dimen/h_2"
+            android:layout_marginTop="@dimen/h_13"
+            android:background="#3f4349" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginBottom="@dimen/h_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/w_190"
+            android:id="@+id/kongge"
+            android:focusable="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_height="@dimen/h_86"
+            android:layout_marginRight="@dimen/w_10"
+            android:background="@drawable/key_bg_rectangle"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="空格"
+            android:textSize="@dimen/h_25" />
+
+
+        <TextView
+            android:id="@+id/delete"
+            android:focusable="true"
+            android:layout_width="@dimen/w_86"
+            android:layout_height="@dimen/h_86"
+            android:layout_marginRight="@dimen/w_10"
+            android:textColor="#000000"
+            android:background="@drawable/key_bg_rectangle"
+            android:gravity="center"
+            android:nextFocusDown="@+id/search_left_grid"
+            android:text="删除"
+            android:textSize="@dimen/h_25" />
+
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/search_left_grid"
+        android:layout_width="@dimen/w_590"
+        android:layout_height="@dimen/h_600"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+
+        android:gravity="center_vertical"
+        android:horizontalSpacing="@dimen/w_10"
+        android:numColumns="6"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/h_10" />
+
+    <!--<com.open.androidtvwidget.view.MainUpView-->
+    <!--android:id="@+id/mainUpView1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+</LinearLayout>

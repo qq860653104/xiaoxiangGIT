@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "zhihu.iptv.jiayin.xiaoxiangketang"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 3
+        versionName "1.14"
+        resConfigs "zh", "en"
+        multiDexEnabled true
+
+
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    sourceSets {
+
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //    implementation 'com.android.support:appcompat-v7:24.2.0'
+
+    //    implementation 'com.android.support:recyclerview-v7:23.1.1'
+    //    implementation 'com.google.code.gson:gson:2.8.0'
+    //    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.youth.banner:banner:1.4.9'
+    //更新
+    api 'com.allenliu.versionchecklib:library:1.8.2'
+    api project(':androidtvwidget')
+    api project(':vitamio')
+    api 'anylife.scrolltextview:ScrollTextviewLib:1.3.7'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api files('libs/androidutils.jar')
+    api files('libs/xutils.jar')
+    api 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    api 'com.squareup.picasso:picasso:2.5.1'
+    api 'com.facebook.fresco:fresco:0.9.0'
+    api 'com.mcxiaoke.volley:library:1.0.7'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    api project(':jcvideoplayer-lib')
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    implementation project(path: ':library')
+    implementation project(path: ':xiangxianglib')
+
+
+}

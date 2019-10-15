@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这里只是测试的demo -->
+<com.open.androidtvwidget.leanback.widget.OpenCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_60"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:text="测试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h_30"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/h_10"
+        android:paddingBottom="@dimen/h_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="#d1d1d1"/>
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

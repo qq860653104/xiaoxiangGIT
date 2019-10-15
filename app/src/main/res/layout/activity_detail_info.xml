@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <ImageView
+        android:id="@+id/bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/movie" />
+
+
+    <com.chunleikeji.view.BlurringView
+        android:id="@+id/blurring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:blurRadius="11"
+        app:downsampleFactor="6"
+        app:overlayColor="#90FFFFFF" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/h_160"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/myinfo"
+            android:layout_width="@dimen/w_1500"
+            android:layout_height="@dimen/h_1000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:textSize="@dimen/h_40"
+            android:lineSpacingExtra="@dimen/h_10"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true" />
+    </FrameLayout>
+
+</FrameLayout>
+

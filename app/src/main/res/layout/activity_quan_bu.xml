@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+
+        <include layout="@layout/movie_all_left_layout" />
+
+        <!--<com.open.androidtvwidget.leanback.recycle.RecyclerViewTV-->
+        <!--android:id="@+id/movieRecycler"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:paddingLeft="@dimen/w_55"-->
+        <!--android:paddingRight="@dimen/w_55"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:focusable="false"-->
+        <!--android:paddingTop="@dimen/h_110" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:background="@drawable/quanbu_left"
+            android:clipToPadding="false">
+            <!--selectRecycler-->
+            <GridView
+                android:id="@+id/movieRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:nextFocusLeft="@id/selectRecycler"
+                android:nextFocusUp="@id/movieRecycler"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/w_85"
+                android:paddingTop="@dimen/h_110"
+                android:paddingRight="@dimen/w_55"
+                android:paddingBottom="@dimen/h_60"
+                android:scrollbars="none" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/live_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/load_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="正在为您努力加载中..."
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="#000000"
+    android:layout_height="match_parent"
+   >
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#000000"-->
+        <!--android:alpha="0.3"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</FrameLayout>-->
+    <!--<com.open.demo.view.BlurringView-->
+    <!--android:id="@+id/blurring_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--app:blurRadius="11"-->
+    <!--app:downsampleFactor="1"-->
+    <!--app:overlayColor="#50b94545" />-->
+
+    <LinearLayout
+        android:layout_width="@dimen/w_351"
+        android:id="@+id/movie_all_left_liner"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/w_290"
+            android:layout_height="@dimen/h_60"
+            android:id="@+id/search_bg"
+            android:layout_marginBottom="@dimen/h_45"
+            android:layout_marginLeft="@dimen/w_30"
+            android:layout_marginRight="@dimen/w_30"
+            android:layout_marginTop="@dimen/h_49"
+            android:background="@drawable/key_bg_rectangle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:nextFocusDown="@+id/selectRecycler"
+                android:id="@+id/search_btn"
+                android:onClick="onSearch"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/h_33"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="bottom|center"-->
+                    <!--android:layout_margin="5px"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/g_search_icon" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_text"
+                    android:textColor="@color/movie_all_left_search"
+                    android:layout_gravity="center"
+                    android:text="搜索"
+                    android:textSize="@dimen/h_33" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_2"
+            android:background="@color/movie_all_left_view" />
+
+        <!--AllMovieRecyclerView-->
+
+        <com.chunleikeji.network.view.AllMovieRecyclerView
+            android:id="@+id/selectRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nextFocusUp="@+id/search_btn"
+            android:nextFocusRight="@+id/movieRecycler"
+            android:background="#000000"
+            android:focusable="false"
+            android:paddingTop="@dimen/h_34" >
+
+        </com.chunleikeji.network.view.AllMovieRecyclerView>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quanbu_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_110"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="@dimen/w_76">
+
+
+            <com.chunleikeji.view.TvButtom2
+                android:id="@+id/xitongshezhi"
+                android:layout_width="@dimen/w_260"
+                android:layout_height="@dimen/h_60"
+                android:layout_marginTop="@dimen/h_23"
+                android:layout_marginRight="@dimen/w_27"
+                android:layout_marginBottom="@dimen/h_23"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:nextFocusDown="@+id/parent"
+                android:text="进入系统设置"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_1"
+            android:background="@drawable/xian">
+
+
+        </View>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_970"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+
+            <FrameLayout
+                android:id="@+id/parent"
+                android:layout_width="@dimen/w_269"
+                android:layout_height="@dimen/h_970"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.chunleikeji.network.view.AllMovieRecyclerView
+                        android:id="@+id/selectRecycler1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#d1d1d1"/>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/w_269"
+                android:layout_marginTop="@dimen/h_110"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <!--<GridView-->
+                <!--android:id="@+id/movieRecycler"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clipChildren="false"-->
+                <!--android:clipToPadding="false"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:numColumns="1"-->
+                <!--android:scrollbars="none" />-->
+                <WebView
+                    android:id="@+id/bangzhustr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_53"
+                    android:background="@color/transparent"
+                    android:layerType="software"
+                    android:textSize="@dimen/h_35" />
+
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_1650"
+        android:layout_marginTop="@dimen/h_35"
+        android:text="帮助手册"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/h_45"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

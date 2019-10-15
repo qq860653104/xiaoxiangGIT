@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quanbu_left"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/w_76"
+                android:paddingTop="@dimen/w_41"
+                android:text="收藏列表"
+                android:textColor="#000000"
+                android:textSize="@dimen/h_40" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/w_76">
+
+
+                    <com.chunleikeji.view.TvButtom2
+                        android:layout_width="@dimen/w_180"
+                        android:layout_height="@dimen/h_60"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="@dimen/w_23"
+                        android:clipChildren="false"
+                        android:id="@+id/upmpvie"
+                        android:clipToPadding="false"
+                        android:textColor="#ffffff"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:text="上传影片"
+                        android:textSize="@dimen/h_26" />
+
+
+                    <com.chunleikeji.view.TvButtom2
+                        android:layout_width="@dimen/w_180"
+                        android:layout_height="@dimen/h_60"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="@dimen/w_23"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:id="@+id/resetpwd"
+                        android:focusableInTouchMode="true"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:text="重设密码"
+                        android:textSize="@dimen/h_26" />
+
+
+                    <com.chunleikeji.view.TvButtom2
+                        android:layout_width="@dimen/w_180"
+                        android:layout_height="@dimen/h_60"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="@dimen/w_23"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:id="@+id/cancle"
+                        android:textColor="#000000"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:text="取消收藏"
+                        android:textSize="@dimen/h_26" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/h_30"
+            android:background="@color/defult_text" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_60">
+
+            <GridView
+                android:id="@+id/moviegrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/h_60"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="@dimen/w_185"
+                android:paddingRight="@dimen/w_55"
+                android:scrollbars="none"
+
+                />
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

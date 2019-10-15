@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GridView TV版本:为了看清楚放大的效果，故意加了一个矩形 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_86"
+    android:layout_height="@dimen/w_86"
+    android:background="@drawable/key_bg_rectangle"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/grid_view_item_test" >-->
+    <!--</ImageView>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="item1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="@dimen/h_25" />
+
+</FrameLayout>
