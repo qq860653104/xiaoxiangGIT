@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="登录"
+            android:textSize="35dp"
+            android:textColor="#eeeeee"
+            android:layout_marginBottom="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#eeeeee"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/textview_style"
+                android:inputType="textPersonName"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#eeeeee"
+                android:textSize="30dp"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_style"
+                android:ems="10"
+                android:nextFocusDown="@id/btLogIn"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btJump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="150dp"
+                android:textSize="30dp"
+                android:text="注册页"
+                android:background="@drawable/button_style"
+                android:onClick="btClick"/>
+
+            <Button
+                android:id="@+id/btLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="@drawable/button_style"
+                android:paddingRight="@dimen/w_60"
+                android:paddingLeft="@dimen/w_60"
+                android:text="确定"
+                android:onClick="btClick"/>
+
+
+            <!--android:paddingLeft="@dimen/w_42"-->
+            <!--android:paddingRight="@dimen/h_42"-->
+
+            <!--android:background="@drawable/bt_shape"-->
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

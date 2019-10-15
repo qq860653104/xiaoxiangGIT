@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 这里只是测试的demo -->
+<com.open.androidtvwidget.leanback.widget.OpenCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/w_220"
+    android:layout_height="@dimen/h_307"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_margin="@dimen/w_24"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--父控件必须设置背景 才可以有 z效果！！！-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_307"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_stroke"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.open.androidtvwidget.leanback.widget.OpenCardView
+                android:id="@+id/img_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_stroke"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/my_img"
+                    android:layout_width="@dimen/w_220"
+                    android:layout_height="@dimen/h_307"
+                    android:layout_gravity="top"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/defult_movie2"
+                    app:riv_corner_radius="@dimen/w_7"
+                    app:riv_mutate_background="true" />
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:textColor="@color/greenyellow"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:id="@+id/pingfen"-->
+                    <!--android:padding="@dimen/h_10"-->
+                    <!--android:layout_margin="@dimen/h_10"-->
+                    <!--android:layout_gravity="right|bottom"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+            </com.open.androidtvwidget.leanback.widget.OpenCardView>
+        </FrameLayout>
+
+        <com.chunleikeji.view.MoreTextView
+            android:id="@+id/moretext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_30"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:gravity="bottom|center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_20"
+             />
+
+    </LinearLayout>
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

@@ -1,0 +1,62 @@
+<com.open.androidtvwidget.leanback.widget.OpenCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/w_540"
+    android:layout_height="@dimen/h_275"
+    android:clipChildren="false"
+    android:layout_margin="@dimen/w_24"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_275"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_stroke"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.open.androidtvwidget.leanback.widget.OpenCardView
+                android:id="@+id/img_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_stroke"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/my_img"
+                    android:layout_width="@dimen/w_540"
+                    android:layout_height="@dimen/h_235"
+                    android:layout_gravity="top"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="@dimen/w_7"
+                    app:riv_mutate_background="true" />
+            </com.open.androidtvwidget.leanback.widget.OpenCardView>
+        </FrameLayout>
+
+        <com.chunleikeji.view.MoreTextView
+            android:id="@+id/moretext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_40"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:gravity="bottom|center"
+            android:singleLine="true"
+            android:text="测试超产送给大家沙嗲基地啊时代说大话谁都会"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_30"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

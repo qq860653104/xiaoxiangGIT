@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#80000000"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tongzhi_text"
+        android:layout_gravity="center"
+        android:textSize="@dimen/h_50"
+        android:text="这是通知啊啊啊啊啊啊"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 这里只是测试的demo -->
+<com.open.androidtvwidget.leanback.widget.OpenCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/w_252"
+    android:layout_height="@dimen/h_397"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clipToPadding="false"
+    android:layout_margin="@dimen/w_24"
+    >
+
+    <!--父控件必须设置背景 才可以有 z效果！！！-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_397"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_stroke"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.open.androidtvwidget.leanback.widget.OpenCardView
+                android:id="@+id/img_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_stroke"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/my_img"
+                    android:layout_width="@dimen/w_252"
+                    android:layout_height="@dimen/h_357"
+                    android:layout_gravity="top"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/defult_movie2"
+                    app:riv_corner_radius="@dimen/w_7"
+                    app:riv_mutate_background="true" />
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="252px"-->
+                    <!--android:id="@+id/delete_img"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:src="@drawable/delete_sc"-->
+                    <!--android:layout_height="357px" />-->
+
+            </com.open.androidtvwidget.leanback.widget.OpenCardView>
+
+            <!--<ImageView-->
+                <!--android:layout_width="252px"-->
+                <!--android:id="@+id/delete_img"-->
+                <!--android:visibility="invisible"-->
+                <!--android:src="@drawable/delete_sc"-->
+                <!--android:layout_height="357px" />-->
+
+            <TextView
+                android:layout_width="@dimen/w_252"
+                android:id="@+id/delete_img"
+                android:visibility="invisible"
+                android:background="#70000000"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h_54"
+                android:text="删除"
+                android:src="@drawable/delete_sc"
+                android:layout_height="@dimen/h_357" />
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textColor="@color/greenyellow"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="9.9"-->
+                <!--android:id="@+id/pingfen"-->
+                <!--android:background="@color/black"-->
+                <!--android:padding="@dimen/h_10"-->
+                <!--android:layout_margin="@dimen/h_10"-->
+                <!--android:layout_gravity="right|bottom"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+        </FrameLayout>
+
+        <com.chunleikeji.view.MoreTextView
+            android:id="@+id/moretext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_40"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:ellipsize="marquee"
+            android:gravity="bottom|center"
+            android:singleLine="true"
+            android:text="测试超产送给大家沙嗲基地啊时代说大话谁都会"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h_30"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

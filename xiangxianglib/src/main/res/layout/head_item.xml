@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.open.androidtvwidget.leanback.widget.OpenCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_stroke"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_width="1740px"
+    android:layout_height="340px"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:scaleType="fitXY"
+        app:riv_corner_radius="7px"
+        android:id="@+id/my_img"
+        app:riv_mutate_background="true"
+        android:focusable="false"
+        android:src="@drawable/header_defult"
+        android:focusableInTouchMode="false"
+        android:layout_width="1740px"
+        android:layout_height="340px" />
+
+
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>

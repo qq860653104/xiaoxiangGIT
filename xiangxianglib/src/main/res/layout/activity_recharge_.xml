@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#7f000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/w_130"
+                android:layout_height="@dimen/h_130"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/h_70"
+                android:src="@drawable/logbg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_50"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/w_15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_30"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账号："
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_30"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="到期时间："
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/VipText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_gengxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_style"
+                    android:nextFocusLeft="@+id/btn_gengxi"
+                    android:nextFocusRight="@+id/linclick1"
+                    android:nextFocusUp="@+id/linclick1"
+                    android:nextFocusDown="@+id/btn_gengxi"
+                    android:onClick="linOnClick"
+                    android:padding="15dp"
+                    android:text="更新状态"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/h_60"
+
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/linclick1"
+                        android:layout_width="@dimen/w_350"
+                        android:layout_height="@dimen/h_450"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/vip_qian"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusLeft="@+id/btn_gengxi"
+                        android:nextFocusUp="@+id/linclick1"
+                        android:nextFocusDown="@+id/btn_gengxi"
+                        android:onClick="linOnClick"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/w_250"
+                                android:layout_height="@dimen/w_200"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/w_75"
+                                android:src="@drawable/vip_dw_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:paddingBottom="1dp">
+
+                            <TextView
+                                android:id="@+id/textOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/vip_text"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/linClick2"
+                        android:layout_width="@dimen/w_350"
+                        android:layout_height="@dimen/h_450"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/vip_qian"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@+id/linClick2"
+                        android:nextFocusDown="@+id/linClick2"
+                        android:onClick="linOnClick"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/w_250"
+                                android:layout_height="@dimen/w_200"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/w_75"
+                                android:src="@drawable/vip_dw_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:paddingBottom="1dp">
+
+                            <TextView
+                                android:id="@+id/textTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/vip_text"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/linClick3"
+                        android:layout_width="@dimen/w_350"
+                        android:layout_height="@dimen/h_450"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/vip_qian"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@+id/linClick3"
+                        android:nextFocusDown="@+id/linClick3"
+                        android:onClick="linOnClick"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/w_250"
+                                android:layout_height="@dimen/w_200"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/w_75"
+                                android:src="@drawable/vip_dw_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:paddingBottom="1dp">
+
+                            <TextView
+                                android:id="@+id/textThree"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/vip_text"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/linClick4"
+                        android:layout_width="@dimen/w_350"
+                        android:layout_height="@dimen/h_450"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@drawable/vip_qian"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusRight="@+id/linClick4"
+                        android:nextFocusUp="@+id/linClick4"
+                        android:nextFocusDown="@+id/linClick4"
+                        android:onClick="linOnClick"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/w_250"
+                                android:layout_height="@dimen/w_200"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/w_75"
+                                android:src="@drawable/vip_dw_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:paddingBottom="1dp">
+
+                            <TextView
+                                android:id="@+id/textFour"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@drawable/vip_text"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/showFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="@dimen/w_1200"
+            android:layout_height="@dimen/h_800"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h_120"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/show_left_radius"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="支付方式"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+                    <!--FocusableInTouchMode(true);-->
+                    <LinearLayout
+                        android:id="@+id/wx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linear_style"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusLeft="@+id/wx"
+                        android:nextFocusRight="@+id/wx"
+                        android:nextFocusUp="@+id/wx"
+                        android:nextFocusDown="@+id/zfb"
+                        android:onClick="linOnClick">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/h_100"
+                            android:layout_marginLeft="@dimen/w_80"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/w_50"
+                                android:layout_height="@dimen/h_55"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/wx" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/h_100"
+                                android:layout_marginLeft="@dimen/w_15"
+                                android:gravity="center"
+                                android:text="微信"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/zfb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linear_style"
+                        android:focusable="true"
+                        android:nextFocusLeft="@+id/zfb"
+                        android:nextFocusRight="@+id/zfb"
+                        android:nextFocusUp="@+id/wx"
+                        android:nextFocusDown="@+id/zfb"
+                        android:onClick="linOnClick">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/h_100"
+                            android:layout_marginLeft="@dimen/w_80"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/vipR"
+                                android:layout_width="@dimen/w_50"
+                                android:layout_height="@dimen/h_55"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/zfb" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/h_100"
+                                android:layout_marginLeft="@dimen/w_15"
+                                android:gravity="center"
+                                android:text="支付宝"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/show_right_radius">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/h_38"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="支付金额 ："
+                            android:textColor="@color/white"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/textMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="#e9cb07"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/w_15"
+                            android:text="元"
+                            android:textColor="@color/white"
+                            android:textSize="23sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vipDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/h_110"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <ImageView
+                        android:id="@+id/bcrImg"
+                        android:layout_width="@dimen/w_550"
+                        android:layout_height="@dimen/h_550"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/h_70"
+                        android:src="@drawable/zfbvip" />
+
+                    <ImageView
+                        android:id="@+id/qrcCode"
+                        android:layout_width="@dimen/w_440"
+                        android:layout_height="@dimen/h_440"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/h_70"
+                        android:src="@drawable/vip_dw_bg" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/linImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/linImg"
+        android:nextFocusRight="@+id/linImg"
+        android:nextFocusUp="@+id/linImg"
+        android:nextFocusDown="@+id/linImg"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="@dimen/w_850"
+            android:layout_height="@dimen/h_800"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/w_80"
+            android:layout_marginTop="@dimen/h_120"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/geimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fbackimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/h_480"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/backImg"
+            android:nextFocusRight="@+id/backImg"
+            android:nextFocusUp="@+id/backImg"
+            android:nextFocusDown="@+id/backImg"
+            android:orientation="horizontal"
+            android:src="@drawable/hua_process" />
+    </FrameLayout>
+</FrameLayout>

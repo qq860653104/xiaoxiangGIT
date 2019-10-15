@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg1"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="注册"
+            android:textSize="35dp"
+            android:textColor="#eeeeee"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:state_focused="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/textPhone"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_style"
+                android:digits="1234567890"
+                android:ems="10"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:state_focused="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#eeeeee"
+                android:text="账号"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_style"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#eeeeee"
+                android:text="密码"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_style"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/btLogIn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btJump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="150dp"
+                android:background="@drawable/button_style"
+                android:onClick="btClick"
+                android:text="登录页"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:onClick="btClick"
+                android:paddingRight="@dimen/w_60"
+                android:paddingLeft="@dimen/w_60"
+                android:text="确定"
+                android:textSize="30dp" />
+
+
+            <!--android:background="@drawable/bt_shape"-->
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

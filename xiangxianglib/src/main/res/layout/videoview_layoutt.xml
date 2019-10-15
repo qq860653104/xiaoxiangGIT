@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/h_36"
+        android:id="@+id/left_menu"
+        android:layout_marginLeft="@dimen/w_27"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textColor="#eeeeee"
+            android:textSize="@dimen/h_60"
+            android:layout_height="wrap_content" />
+
+
+        
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_gravity="right|top"
+        android:textColor="#d2d2d2"
+        android:id="@+id/current_time"
+        android:layout_margin="@dimen/w_28"
+        android:textSize="@dimen/h_48"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/btn_menu"
+        android:paddingLeft="@dimen/w_46"
+        android:layout_marginBottom="@dimen/h_68"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="@dimen/w_64"
+            android:layout_height="@dimen/h_74"
+            android:layout_gravity="center"
+            android:src="@drawable/hua_btn_pause"/>
+
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="@dimen/w_1472"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/h_22"
+            android:layout_marginLeft="@dimen/w_30"
+            android:minHeight="@dimen/h_22"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/layer_seek_progress"
+            android:thumb="@drawable/shape_seek_ball"
+            android:visibility="visible"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/h_42"
+            android:textColor="#d2d2d2"
+            android:textStyle="bold"
+            android:id="@+id/end_time"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/w_26"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GridView TV版本:为了看清楚放大的效果，故意加了一个矩形 -->
+<com.open.androidtvwidget.leanback.widget.OpenCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/h_329"
+    android:layout_height="@dimen/w_257"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:id="@+id/search_item"
+    android:layout_marginBottom="@dimen/h_72"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <com.open.androidtvwidget.leanback.widget.OpenCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_257"
+        android:id="@+id/item_img"
+        android:scaleType="fitXY"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_gravity="top"
+        android:background="@drawable/grid_view_item_test"
+        >
+    </com.open.androidtvwidget.leanback.widget.OpenCardView>
+
+    <TextView
+        android:id="@+id/movie_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="item1"
+        android:textAlignment="center"
+        android:textColor="@color/defult_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/h_30" />
+
+
+
+
+</com.open.androidtvwidget.leanback.widget.OpenCardView>
